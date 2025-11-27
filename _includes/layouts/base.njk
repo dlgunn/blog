@@ -5,10 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		{# This next line just redirects robots to the rss feed #}
+		{# <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}"> #}
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+		<meta name="generator" content="{{ eleventy.generator }}">
 
 		{#-
 		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
@@ -22,7 +23,8 @@
 		#}
 
 		{#- Add CSS to the bundle #}
-		<style>/* This is an arbitrary CSS string added to the bundle */</style>
+		{# No idea what this line does so I commented it out #}
+		{# <style>/* This is an arbitrary CSS string added to the bundle */</style> #}
 
 		{#- Add the contents of a file to the bundle #}
 		<style>{% include "css/index.css" %}</style>
