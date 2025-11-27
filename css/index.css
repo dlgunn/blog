@@ -10,30 +10,30 @@
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
 
-	--background-color: #fff;
+	--background-color: rgb(253, 249, 238);
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
+	--text-color-link-active: rgb(65, 108, 163);
 	--text-color-link-visited: #17050F;
 
 	--syntax-tab-size: 2;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #C0C0C0;
-		--color-gray-90: #dad8d8;
+		--color-gray-90: #dad8d8; */
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
+		/* --text-color-link: #1493fb;
 		--text-color-link-active: #6969f7;
 		--text-color-link-visited: #a6a6f8;
 
-		--background-color: #15202b;
+		--background-color: rgb(28, 28, 32);
 	}
-}
+} */
 
 
 /* Global stylesheet */
@@ -149,7 +149,7 @@ header {
 	justify-content: space-between;
 	gap: .5em 1em;
 	list-style: "";
-	border-top: 1px dashed var(--color-gray-20);
+	border-top: 1px solid var(--color-gray-20);
 	padding: 1em 0;
 }
 .links-nextprev > * {
@@ -203,7 +203,7 @@ header {
 .home-link {
 	flex-grow: 1;
 	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
+	font-weight: 500;
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
